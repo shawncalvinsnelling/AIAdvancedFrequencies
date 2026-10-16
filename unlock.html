@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Private access portal for AI Advanced Frequencies premium sessions.">
+  <title>Premium Access | AI Advanced Frequencies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">AI Advanced Frequencies</a>
+      <nav><a href="index.html">Home</a><a href="unlock.html">Premium Access</a></nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap unlock-wrap">
+      <p class="eyebrow">PREMIUM ACCESS</p>
+      <h1 class="unlock-title">Enter your access code</h1>
+      <p class="section-intro">After purchase, use the access code you received. Your purchased session will appear below.</p>
+
+      <form id="unlock-form" class="unlock-card" autocomplete="off">
+        <label for="access-code">Access code</label>
+        <div class="unlock-row">
+          <input id="access-code" name="code" type="text" maxlength="80" placeholder="Example: AAF-XXXX-XXXX" required>
+          <button class="button primary" type="submit">Unlock session</button>
+        </div>
+        <p id="unlock-status" class="fine" role="status" aria-live="polite"></p>
+      </form>
+
+      <section id="player-area" class="player-area" hidden>
+        <div class="unlock-card">
+          <p class="eyebrow">UNLOCKED</p>
+          <h2 id="session-title">Your premium session</h2>
+          <p id="session-description" class="section-intro"></p>
+          <div id="video-container" class="video-shell"></div>
+
+          <div class="loop-controls">
+            <label class="loop-toggle">
+              <input id="loop-toggle" type="checkbox" checked>
+              Repeat continuously for sleep / extended listening
+            </label>
+            <button id="logout-button" class="button secondary" type="button">Lock session</button>
+          </div>
+          <p class="fine">Use a comfortable listening volume. Wellness content only; not medical treatment.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><strong>AI Advanced Frequencies</strong><p>Premium listening access.</p></div>
+      <div><p>© 2026 Shawn Calvin Snelling</p></div>
+    </div>
+  </footer>
+
+  <script src="access-config.js"></script>
+  <script src="unlock.js"></script>
+</body>
+</html>
